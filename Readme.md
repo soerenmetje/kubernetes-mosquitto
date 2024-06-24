@@ -27,3 +27,5 @@ For testing the MQTT broker, you may use the desktop application [MQTTX](https:/
 It enables connecting to the broker, as well as, sending and receiving messages.
 
 
+## Sources
+- https://www.intuz.com/blog/how-to-deploy-mqtt-broker-in-a-kubernetes-cluster
