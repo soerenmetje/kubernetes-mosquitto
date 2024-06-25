@@ -22,7 +22,9 @@ spec:
         - image: eclipse-mosquitto:2.0
           name: mosquitto
           ports:
-            - containerPort: 1883
+            - containerPort: 8883
+              name: mosquitto
+            - containerPort: 9001
               name: mosquitto
           volumeMounts:
             - name: mosquitto-persistent-storage
@@ -33,6 +35,8 @@ spec:
             - name: mosquitto-password
               mountPath: /mosquitto/config/password.txt
               subPath: password.txt
+            - mountPath: /mosquitto/certs/
+              name: certs
       volumes:
         - name: mosquitto-persistent-storage
           persistentVolumeClaim:
@@ -43,3 +47,6 @@ spec:
         - name: mosquitto-password
           configMap:
             name: mosquitto-password
+        - name: certs
+          secret:
+            secretName: mosquitto-certs

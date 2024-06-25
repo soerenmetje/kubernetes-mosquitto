@@ -29,5 +29,6 @@ It enables connecting to the broker, as well as, sending and receiving messages.
 
 ## Sources
 - https://www.intuz.com/blog/how-to-deploy-mqtt-broker-in-a-kubernetes-cluster
+- https://moreillon.medium.com/encrypted-mosquitto-mqtt-broker-in-kubernetes-26bb7acd11c7
 - https://mosquitto.org/man/mosquitto_passwd-1.html
 - https://hub.docker.com/_/eclipse-mosquitto
