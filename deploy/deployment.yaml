@@ -25,7 +25,7 @@ spec:
             - containerPort: 8883
               name: mosquitto
             - containerPort: 9001
-              name: mosquitto
+              name: mosquitto-ws
           volumeMounts:
             - name: mosquitto-persistent-storage
               mountPath: /mosquitto/data
