@@ -9,6 +9,7 @@ data:
     # Config file for mosquitto
     persistence true
     persistence_location /mosquitto/data/
+    password_file /mosquitto/config/password.txt
     log_dest stdout
     
     # MQTTS listener
