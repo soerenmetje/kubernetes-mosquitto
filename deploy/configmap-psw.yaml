@@ -2,8 +2,8 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: mosquitto-password
-labels:
-  app: mosquitto
+  labels:
+    app: mosquitto
 data:
   # To create hashed password, replace admin and mystrongmqttpassword and run:
   # docker run --rm -it eclipse-mosquitto:2.0 sh -c "mosquitto_passwd -c -b /pws.txt admin mystrongmqttpassword && cat pws.txt"
