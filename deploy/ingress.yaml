@@ -7,10 +7,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - mqtt.metje.it
+        - mqtt.example.com
       secretName: mosquitto-certs
   rules:
-    - host: mqtt.metje.it
+    - host: mqtt.example.com
       http:
         paths:
           - path: /
